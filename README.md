@@ -1,1 +1,1 @@
-Programming Fundamentals | Course
+Programming Fundamentals Course Resources
