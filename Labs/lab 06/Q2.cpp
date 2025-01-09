@@ -18,4 +18,5 @@ int main() {
     cout << "The: " << K << "Kelvin " << endl; 
     cout << "Conversion to Fahrenheit: " << F << "F" << endl; 
     
+    system("pause")
 }
