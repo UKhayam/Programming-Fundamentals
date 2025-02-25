@@ -1,20 +1,22 @@
-#include <iostream>
 
+
+// Q2 Write a program in C++ to convert temperature 
+// in Kelvin to Fahrenheit.
+
+#include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
 
-    int num;
-    cout << "Enter a Number " << endl;
-    cin >> num;
+    float K, F;
 
-    if (num % 2 == 0)
-    {
-        cout << "The number is Even";
-    }
-    else
-    {
-        cout << "The number is Odd";
-    }
+    cout << "Enter Temperatur in Kelvin (K)..." << endl;
+    cin >> K;
+
+    F = (K - 273.15) * 1.8 + 32;
+
+    cout << "The: " << K << "Kelvin " << endl; 
+    cout << "Conversion to Fahrenheit: " << F << "F" << endl; 
+    
+    system("pause")
 }

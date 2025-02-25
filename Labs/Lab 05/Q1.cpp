@@ -1,21 +1,18 @@
-#include <iostream>
 
+
+// Q1 Write a program in C++ that converts kilometers 
+// per hour to miles per hour.
+#include <iostream>
 using namespace std;
 
-int main(){
+int main() {
 
-    int x;
-    cout << "Enter a number \n";
-    cin>> x;
+    float kmph, miph;
 
-    if(x == 100){
-        cout << "Number is equal to 100";
-    }
-    else if(x > 100){
-        cout << "The number is greater than 100";
-    }
-    else{
-        cout << "The number is less than 100";
-    }
+    cout << "Enter Distance in Kilometer Per Hour..." << endl;
+    cin >> kmph;
+
+    miph = kmph * 0.621371;
+
+    cout << "The" << kmph << "Km/hr in Miles Per Hour: " << miph; 
 }
-

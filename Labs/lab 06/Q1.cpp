@@ -1,18 +1,20 @@
 
-
-// Q1 Write a program in C++ that converts kilometers 
-// per hour to miles per hour.
 #include <iostream>
+
 using namespace std;
 
-int main() {
+int main () {
 
-    float kmph, miph;
+    int sum = 0;
 
-    cout << "Enter Distance in Kilometer Per Hour..." << endl;
-    cin >> kmph;
+    int iteration = 1;
 
-    miph = kmph * 0.621371;
+    // ( 1 <= 10 ) Run 10 Times
+    while ( iteration <= 10 ) { 
 
-    cout << "The" << kmph << "Km/hr in Miles Per Hour: " << miph; 
+        sum += iteration;
+        iteration++;
+    }
+
+    cout << "Sum of First Natural Number :  " << sum ;
 }

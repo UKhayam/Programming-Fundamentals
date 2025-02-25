@@ -1,22 +1,47 @@
-
-
-// Q2 Write a program in C++ to convert temperature 
-// in Kelvin to Fahrenheit.
-
 #include <iostream>
+
 using namespace std;
 
-int main() {
+int main(){
 
-    float K, F;
+    int n, factorial = 1;
+    int i = 1;
 
-    cout << "Enter Temperatur in Kelvin (K)..." << endl;
-    cin >> K;
+    cout << "Enter Number for Factorial: " << endl;
+    cin >> n;
 
-    F = (K - 273.15) * 1.8 + 32;
-
-    cout << "The: " << K << "Kelvin " << endl; 
-    cout << "Conversion to Fahrenheit: " << F << "F" << endl; 
-    
-    system("pause")
+    while (i <= n){
+        
+        factorial = factorial * i;
+        cout << "Factorial After " << i << " Iteration: " << factorial << endl;
+        i++;
+    }
+    cout << "Factorial is of " << n << " is : "<< factorial;
 }
+
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int input;
+
+//     cout << "Enter a number to find its factorial: ";
+//     cin >> input;
+
+//     int factorial = 1;
+
+//     int i = input; // Keep a separate variable for iteration
+//     while (i > 1)  // Continue until i reaches 1
+//     { 
+//         cout << "Iteration Number Run: " << i << endl;
+//         cout << "Factorial After Iteration " << factorial << endl;
+//         factorial *= i;
+//         i--;
+//     }
+
+//     cout << "Factorial of " << input << " is: " << factorial << endl;
+
+//     return 0;
+// }
