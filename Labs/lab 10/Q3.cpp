@@ -5,7 +5,7 @@ int main()
 {
 
     int num1, num2;
-    int input;
+    char input;
 
     cout << "*****************************" << endl;
     cout << "Enter '+' for Addition" << endl;
@@ -31,13 +31,13 @@ int main()
         cout << "Substraction Of the Provided Numbers is: " << num1 - num2;
         break;
     case '*':
-        cout << "Multiplication Of the Provided Numbers is: " << num1 + num2;
+        cout << "Multiplication Of the Provided Numbers is: " << num1 * num2;
         break;
     case '/':
         cout << "Division Of the Provided Numbers is: " << num1 / num2;
         break;
     default:
-        cout << "You have entered valid input";
+        cout << "You have entered invalid input!";
         break;
     }
 }
